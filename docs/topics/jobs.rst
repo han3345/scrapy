@@ -37,6 +37,9 @@ To start a spider with persistence support enabled, run it like this::
 Then, you can stop the spider safely at any time (by pressing Ctrl-C or sending
 a signal), and resume it later by issuing the same command::
 
+waring:please press ctrl-C only ONCE and wait for 'spider closed' info message like the example below.
+If you press ctrl-c twice or more, it won't work properly!
+
     scrapy crawl somespider -s JOBDIR=crawls/somespider-1
 
 .. _topics-keeping-persistent-state-between-batches:
